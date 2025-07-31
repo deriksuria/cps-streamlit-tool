@@ -15,7 +15,7 @@ You can access the app here:
 
 The app allows you to:
 - Select a **start and end date** (month/year granularity)
-- Choose from a list of commonly used CPS variables (e.g., hours missed from work, race, income, etc.)
+- Choose from all CPS variables offered by the Census (e.g., hours missed from work, race, income, etc.)
 - Automatically fetch and compile monthly datasets from the Census API
 - Save the combined dataset as a downloadable CSV file
 
