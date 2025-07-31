@@ -7,7 +7,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import os
 
 # --- Variable aliases ---
-VARIABLE_ALIASES = {
+VARIABLE_ALIAS = {
     "PUHROFF1": ["PUHROFF1"],
     "PUHROFF2": ["PUHROFF2"],
     "PWSSWGT": ["PWSSWGT"],
@@ -16,6 +16,8 @@ VARIABLE_ALIASES = {
     "PTDTRACE": ["PTDTRACE"],
     "HEFAMINC": ["HEFAMINC"]
 }
+
+from variable_aliases import VARIABLE_ALIASES
 
 # --- Title ---
 st.title("📊 CPS Microdata Downloader")
