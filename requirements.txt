@@ -1,0 +1,5 @@
+pandas
+requests
+tqdm
+streamlit
+python-dateutil
