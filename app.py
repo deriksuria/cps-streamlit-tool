@@ -84,7 +84,8 @@ if st.button("Start Download"):
         st.info("Downloading data...")
         tasks = []
         current = datetime(start_date.year, start_date.month, 1)
-        while current <= end_date:
+        end_dt = datetime(end_date.year, end_date.month, 1)
+        while current <= end_dt:
             tasks.append((current.year, current.strftime('%b').lower()))
             current += relativedelta(months=1)
 
