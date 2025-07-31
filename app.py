@@ -7,16 +7,6 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import os
 
 # --- Variable aliases ---
-VARIABLE_ALIAS = {
-    "PUHROFF1": ["PUHROFF1"],
-    "PUHROFF2": ["PUHROFF2"],
-    "PWSSWGT": ["PWSSWGT"],
-    "GESTFIPS": ["GESTFIPS", "STATE"],
-    "GTCO": ["GTCO", "COUNTY"],
-    "PTDTRACE": ["PTDTRACE"],
-    "HEFAMINC": ["HEFAMINC"]
-}
-
 from variable_aliases import VARIABLE_ALIASES
 
 # --- Title ---
