@@ -90,15 +90,26 @@ if st.button("Start Download"):
             current += relativedelta(months=1)
 
         all_dfs = []
+        progress_bar = st.progress(0)
+        status_text = st.empty()
+
         with ThreadPoolExecutor(max_workers=10) as executor:
             futures = {
                 executor.submit(download_month, y, m, selected_vars, api_key): (y, m)
                 for y, m in tasks
             }
-            for future in as_completed(futures):
+
+            total = len(futures)
+            for i, future in enumerate(as_completed(futures)):
                 df = future.result()
                 if df is not None:
                     all_dfs.append(df)
+                progress_bar.progress((i + 1) / total)
+                y, m = futures[future]
+                status_text.text(f"Downloaded {m.title()} {y} ({i + 1}/{total})")
+
+        status_text.text("✅ Download complete.")
+        progress_bar.empty()
 
         if all_dfs:
             full_df = pd.concat(all_dfs, ignore_index=True)
