@@ -46,6 +46,8 @@ streamlit run app.py
 ```
 ---
 
+## Some Other Notes
+
 ### 🔑 API Key
 To use the app, you'll need a Census API key. You can request one for free here:
 👉 https://api.census.gov/data/key_signup.html
