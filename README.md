@@ -69,6 +69,6 @@ Available to download directly through the Streamlit interface
 - Variable names can differ slightly between months; the app uses a fallback alias system to resolve them dynamically.
 - Built using pandas, requests, concurrent.futures, and streamlit.
 
-### 🙌 Credits
-Created by Derik Suria
-Inspired by the need for fast, user-friendly access to CPS microdata for policy analysis and research.
+---
+
+**_Created by Derik Suria; Inspired by the need for fast, user-friendly access to CPS microdata for policy analysis and research._**
